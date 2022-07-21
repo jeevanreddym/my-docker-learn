@@ -4,6 +4,7 @@ default docker repo => https://hub.docker.com/
 Docker CLI => communicates with Docker Deamon
 
 
+
 # Docker commands:
 docker pull ubuntu
 

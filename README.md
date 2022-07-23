@@ -20,7 +20,9 @@ docker run ubuntu ls  ---> list all contents (folders/files) of the current cont
 docker run -it alpine sh ---> i(interactive) t(terminal)
 
 docker start <container-id>/<container-name> ---> restart a stopped container.
+
 docker stop <container-id>/<container-name>
+
 docker kill <container-id>/<container-name>
 
 docker rm <container-id>/<container-name> ---> remove (frees up disk space allocated to the stopped container).
@@ -31,7 +33,9 @@ docker commit ---> create a new image from container.
 
 
 ---> running a command on an existing running docker container.
+
 docker exec <container-id>/<container-name> <command> 
+
 docker exec my-java-container ls
 
 

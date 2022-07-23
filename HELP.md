@@ -7,6 +7,8 @@ mysql        latest    33037edcac9b   9 days ago    444MB
 openjdk      latest    38c164acc56b   2 weeks ago   464MB
 ubuntu       latest    27941809078c   6 weeks ago   77.8MB
 
+
+
 PS C:\Users\test\my-folder\Workspaces\my-docker-learn> docker run --rm -it test1
 / # ls
 bin    dev    etc    home   lib    media  mnt    opt    proc   root   run    sbin   srv    sys    tmp    usr    var

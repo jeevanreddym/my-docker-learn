@@ -216,3 +216,20 @@ PS C:\Users\test\my-folder\Workspaces\my-docker-learn> docker run --rm -it test1
 Hello World for Java.
 sh-4.4# 
 
+
+# PS C:\Users\test\my-folder\Workspaces\my-docker-learn> docker run --rm -p 5000:9000  my-docker-learn-image
+
+=========|_|==============|___/=/_/_/_/
+:: Spring Boot ::                (v2.7.1)
+
+2022-07-26 15:53:32.288  INFO 1 --- [           main] c.m.d.l.m.MyDockerLearnApplication       : Starting MyDockerLearnApplication v0.0.1-SNAPSHOT using
+Java 18.0.1.1 on 6563972ab161 with PID 1 (/app.jar started by root in /)
+2022-07-26 15:53:32.291  INFO 1 --- [           main] c.m.d.l.m.MyDockerLearnApplication       : No active profile set, falling back to 1 default profil
+e: "default"
+2022-07-26 15:53:33.798  INFO 1 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 9000
+2022-07-26 15:53:33.812  INFO 1 --- [           main] c.m.d.l.m.MyDockerLearnApplication       : Started MyDockerLearnApplication in 1.98 seconds (JVM r
+unning for 2.455)
+
+![img_3.png](img_3.png)
+
+

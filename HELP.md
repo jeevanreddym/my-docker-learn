@@ -230,6 +230,6 @@ e: "default"
 2022-07-26 15:53:33.812  INFO 1 --- [           main] c.m.d.l.m.MyDockerLearnApplication       : Started MyDockerLearnApplication in 1.98 seconds (JVM r
 unning for 2.455)
 
-![img_3.png](img_3.png)
+![img_3.png](z-imgs/img_3.png)
 
 

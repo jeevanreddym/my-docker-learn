@@ -3,14 +3,12 @@ default docker repo => https://hub.docker.com/
 
 Docker CLI => communicates with Docker Demon (Docker Engine) using gRPC protocol. 
 
-
-
 # Docker commands:
 docker pull ubuntu  => client makes a gRPC to Docker Demon (DockerEngine) 
-                        & it translates it into a container inside the VM (WSL-2.0 in Windows).  
+& it translates it into a container inside the VM (WSL-2.0 in Windows).  
 
 docker ps -a  ---> list all docker containers
-![img.png](img.png)
+![img.png](z-imgs/img.png)
 
 docker run ubuntu
 
@@ -48,7 +46,7 @@ docker run --rm -it -v ${PWD}:/hostvol ubuntu bash --> -v(specifies the volume)
 ---> create volume
 docker volume create <volume-name>
 
-![img_1.png](img_1.png)
+![img_1.png](z-imgs/img_1.png)
 
 
 ---> mapping ports in docker
@@ -57,7 +55,7 @@ docker run -p 8080:80 nginx
 
 docker images
 
-![img_2.png](img_2.png)
+![img_2.png](z-imgs/img_2.png)
 
 
 # Creating docker image using Dockerfile:

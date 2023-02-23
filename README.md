@@ -107,6 +107,15 @@ PS C:\Users\test\my-folder\Workspaces\my-docker-learn> docker run -p 9000:9000 -
     2023-02-03 03:54:51.661  INFO 1 --- [           main] c.m.d.l.m.MyDockerLearnApplication       : Started MyDockerLearnApplication in 2.101 seconds (JVM
     running for 2.588)
 
-![img.png](z-imgs/img-4.png)
+![img.png](z-imgs/img_4.png)
+
+PS C:\Users\test\my-folder\Workspaces\my-springboot-basics> mvn spring-boot:build-image
+PS C:\Users\test\my-folder\Workspaces\my-springboot-basics> docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: g1rocks
+Password:
+Login Succeeded
+
+![img.png](z-imgs/img_5.png)
 
 

@@ -12,7 +12,7 @@
 
     <groupId>com.my.docker.learn</groupId>
     <artifactId>my-docker-learn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>my-docker-learn</name>
     <description>my-docker-learn</description>
 

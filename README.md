@@ -7,68 +7,68 @@ Container: Running version.
 Docker CLI => communicates with Docker Demon (Docker Engine) using gRPC protocol. 
 
 # Docker commands:
-docker pull ubuntu  => client makes a gRPC to Docker Demon (DockerEngine) 
+<code>docker pull ubuntu</code>  => client makes a gRPC to Docker Demon (DockerEngine) 
 & it translates it into a container inside the VM (WSL-2.0 in Windows).  
 
-docker ps -a  ---> list all docker containers
+<code>docker ps -a</code>  ---> list all docker containers
 ![img.png](z-imgs/img.png)
 
-docker run ubuntu
+<code>docker run ubuntu</code>
 
-docker run ubuntu ls  ---> list all contents (folders/files) of the current container
+<code>docker run ubuntu ls</code>  ---> list all contents (folders/files) of the current container
 
 ---> getting into an interactive shell using "-it"
 
-docker run -it alpine sh ---> i(interactive) t(terminal)
+<code>docker run -it alpine sh</code> ---> i(interactive) t(terminal)
 
-docker start <container-id>/<container-name> ---> restart a stopped container.
+<code>docker start <container-id>/<container-name></code> ---> restart a stopped container.
 
-docker stop <container-id>/<container-name>
+<code>docker stop <container-id>/<container-name></code>
 
-docker kill <container-id>/<container-name>
+<code>docker kill <container-id>/<container-name></code>
 
-docker rm <container-id>/<container-name> ---> remove (frees up disk space allocated to the stopped container).
+<code>docker rm <container-id>/<container-name></code> ---> remove (frees up disk space allocated to the stopped container).
 
-docker run --name my-java-container -it openjdk bash  ---> naming a container (my-java-container)
+<code>docker run --name my-java-container -it openjdk bash</code>  ---> naming a container (my-java-container)
 
-docker commit ---> create a new image from container.
+<code>docker commit</code> ---> create a new image from container.
 
 
 ---> running a command on an existing running docker container.
 
-docker exec <container-id>/<container-name> <command> 
+<code>docker exec <container-id>/<container-name> <command></code> 
 
-docker exec my-java-container ls
+<code>docker exec my-java-container ls</code>
 
 
-docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=secret -d mysql ---> -d(detach) -e(env variable)
+<code>docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=secret -d mysql</code> ---> -d(detach) -e(env variable)
 
 
 ---> accessing certain files/folders from the host OS inside the container by giving the container access to them.
-docker run --rm -it -v ${PWD}:/hostvol ubuntu bash --> -v(specifies the volume) 
+<code>docker run --rm -it -v ${PWD}:/hostvol ubuntu bash</code> --> -v(specifies the volume) 
 
 ---> create volume
-docker volume create <volume-name>
+<code>docker volume create <volume-name></code>
 
 ![img_1.png](z-imgs/img_1.png)
 
 
 ---> mapping ports in docker (-p {HostPort}:{ContainerPort})
-docker run -p 8080:80 nginx
+<code>docker run -p 8080:80 nginx</code>
 
 docker images
 
 ![img_2.png](z-imgs/img_2.png)
 
 # Creating docker image using Dockerfile:
-docker build -t <image-name> .
+<code>docker build -t <image-name> .</code>
 
-docker build -t my-spring-cloud-learning .
+<code>docker build -t my-spring-cloud-learning .</code>
 
 
 
 # Run docker image:
-docker run -p 5000:5000 g1rocks/my-spring-cloud-learning:0.0.1-SNAPSHOT
+<code>docker run -p 5000:5000 g1rocks/my-spring-cloud-learning:0.0.1-SNAPSHOT</code>
 
 
 
